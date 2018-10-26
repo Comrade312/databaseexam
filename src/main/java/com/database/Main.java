@@ -20,7 +20,7 @@ public class Main {
             statement = worker.getConnection().createStatement();
             preparedStatement = statement.getConnection().prepareStatement(INSERT_Q);
             resultSet = statement.executeQuery(query);
-            
+            //
             while(resultSet.next()){
                 User user = new User();
                 user.setId(resultSet.getInt("id"));
